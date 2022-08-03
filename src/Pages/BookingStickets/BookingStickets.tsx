@@ -234,8 +234,23 @@ const BookingStickets = () => {
                                                         <div className="screenBooking">
                                                             <img src={screen} />
                                                         </div>
-                                                        <div className="bookingSeat" style={{ textAlign: "center" }}>
-                                                            {renderSeats()}
+                                                        <div
+                                                            style={{
+                                                                height: "auto",
+                                                                width: "auto",
+                                                                overflowX: "scroll",
+                                                            }}
+                                                        >
+                                                            <div
+                                                                className="bookingSeat"
+                                                                style={{
+                                                                    textAlign: "center",
+                                                                    width: "750px",
+                                                                    margin: "auto",
+                                                                }}
+                                                            >
+                                                                {renderSeats()}
+                                                            </div>
                                                         </div>
                                                         <div className="typeSeat row">
                                                             <div className="typeSeatItem col-4 col-sm-4 col-md-4 col-lg-2">

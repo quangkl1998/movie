@@ -630,58 +630,6 @@ body,
   opacity: 1;
 }
 
-.movie__tab .movie__tab__item .list__film .film__showing .btnGetTicket {
-  display: none;
-  position: absolute;
-  bottom: 0;
-  left: 50%;
-  -webkit-transform: translate(-50%, -50%);
-  transform: translate(-50%, -50%);
-  width: 90%;
-  padding: 10px 0;
-  color: #fff;
-  font-size: 1.3rem;
-  background-color: #fb4226;
-  font-weight: 500;
-  border: none;
-  border-radius: 5px;
-  margin-bottom: 10px;
-  -webkit-transition: 0.5s;
-  transition: 0.5s;
-}
-
-.movie__tab .movie__tab__item .list__film .film__showing .btnGetTicket:after {
-  content: '';
-  position: absolute;
-  bottom: 0;
-  left: 0;
-  width: 100%;
-  height: 100%;
-  border-radius: 5px;
-  z-index: -2;
-}
-
-.movie__tab .movie__tab__item .list__film .film__showing .btnGetTicket:before {
-  content: '';
-  position: absolute;
-  bottom: 0;
-  left: 0;
-  width: 0%;
-  height: 100%;
-  background-color: #821909;
-  -webkit-transition: all .5s;
-  transition: all .5s;
-  border-radius: 5px;
-  z-index: -1;
-}
-
-.movie__tab .movie__tab__item .list__film .film__showing .btnGetTicket:hover {
-  color: #fff;
-}
-
-.movie__tab .movie__tab__item .list__film .film__showing .btnGetTicket:hover:before {
-  width: 100%;
-}
 
 .movie__tab .movie__tab__item .list__film .film__showing .btnFilmDetail {
   display: none;
@@ -2647,7 +2595,8 @@ body,
 }
 
 .bookingSticket .bookingNav #bookingTab .bookingSeat {
-  width: auto !important;
+  /* width: auto !important; */
+  /* overflow-y: 500px; */
 }
 
 .bookingSticket .bookingNav #bookingTab .bookingSeat .listSeatRow {
@@ -2947,10 +2896,10 @@ body,
 }
 
 @media screen and (max-width: 992px) {
-  .bookingSticket .bookingSeat {
+  /* .bookingSticket .bookingSeat {
     width: 100%;
     overflow-x: scroll;
-  }
+  } */
 
   .bookingSticket .bookingSeat .listSeatRow {
     display: -webkit-box;
@@ -3039,27 +2988,37 @@ body,
   font-size: 24px;
 }
 
-.btnGetTicket {
-  display: none;
-  top: 50%;
-  left: 50%;
-  transform: translate(-50%, -50%);
-  padding: 15px 30px;
-}
 
 .card-film {
   opacity: 1;
-  transition: all 0.3s;
+  transition: all 0.5s;
 }
 
-.card-film:hover {
-  opacity: 0.9;
-  background-color: rgb(165, 161, 161);
+
+
+.btnGetTicket a {
+  color: #fff;
 }
 
-.card-film:hover>.btnGetTicket {
-  display: block;
+.btnGetTicket a:hover {
+  color: #fff;
 }
+
+.card-film-body {
+  display: none;
+  bottom: 0;
+  left: 50%;
+  transform: translate(-50%, 0);
+  transition: all 0.5s;
+}
+
+.card-film:hover>.card-film-body {
+  display: flex;
+  transition: all 0.5s;
+
+}
+
+
 
 .ant-tabs-tab {
   font-size: 20px;

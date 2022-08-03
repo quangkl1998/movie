@@ -99,7 +99,7 @@ const Register = () => {
                                         message: "Mật khẩu ít nhất 1 chữ cái, 1 số và ít nhất 8 kí tự",
                                     },
                                 })}
-                                type="text"
+                                type="password"
                                 placeholder="Mật khẩu"
                                 className="form-control input__line"
                             />
@@ -129,7 +129,7 @@ const Register = () => {
                                         message: "Email không được để trống",
                                     },
                                 })}
-                                type="text"
+                                type="email"
                                 placeholder="Email"
                                 className="form-control input__line"
                             />

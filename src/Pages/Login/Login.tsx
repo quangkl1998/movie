@@ -84,7 +84,7 @@ const Login = () => {
                                     //     message: "Mật khẩu ít nhất 1 chữ cái, 1 số và ít nhất 8 kí tự",
                                     // },
                                 })}
-                                type="text"
+                                type="password"
                                 placeholder="Mật khẩu"
                                 className="form-control input__line"
                             />
